@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,6 +18,10 @@
     <!-- Navigation -->
     <header>
         <nav>
+            <button id="theme-toggle" class="theme-btn"></button>
+            </button>
+    
+            
             <h2 class="logo">Nethra S</h2>
 
             <ul>
@@ -32,7 +37,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
 
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-right">
 
             <h1>Hello, I'm <span>Nethra</span></h1>
 
@@ -43,9 +48,9 @@
                 creating modern, responsive and user-friendly websites.
             </p>
             
-             <a href="resume.pdf" download class="resume-btn">
+             <a href="Nethra_S_Resume.pdf" download class="resume-btn">
                 Download Resume
-            </a>
+             </a>
 
             
         
@@ -73,14 +78,14 @@
 
         </div>
 
-        <div class="hero-image">
+        <div class="hero-image"data-aos="fade-left">
             <img src="profile.jpg" alt="Nethra">
         </div>
 
     </section>
     <!-- About Section -->
 
-<section id="about" class="about">
+<section id="about" class="about"data-aos="fade-up">
 
     <h2>About Me</h2>
 
@@ -133,11 +138,36 @@
     </div>
 
 </section>
+<!-- Statistics Section -->
+
+<section class="stats"data-aos="zoom-in">
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="2">0</h2>
+        <p>Projects</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="8">0</h2>
+        <p>Skills</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="5">0</h2>
+        <p>Certificates</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="2025">0</h2>
+        <p>Graduate</p>
+    </div>
+
+</section>
 </section>
 
 <!-- Skills Section -->
 
-<section id="skills" class="skills">
+<section id="skills" class="skills"data-aos="fade-up">
 
     <h2>Technical Skills</h2>
 
@@ -226,7 +256,7 @@
 </section>
 <!-- Projects Section -->
 
-<section id="projects" class="projects">
+<section id="projects" class="projects"data-aos="fade-up">
 
     <h2>Projects</h2>
 
@@ -286,7 +316,7 @@
 </section>
 <!-- Education Section -->
 
-<section id="education" class="education">
+<section id="education" class="education"data-aos="fade-right">
 
     <h2>Education</h2>
 
@@ -306,7 +336,7 @@
 </section>
 <!-- Certifications Section -->
 
-<section id="certifications" class="certifications">
+<section id="certifications" class="certifications"data-aos="zoom-in">
 
     <h2>Certifications</h2>
     <p class="section-subtitle">
@@ -362,7 +392,7 @@
 
     <h2>Workshops</h2>
 
-    <div class="workshop-container">
+    <div class="workshop-container"data-aos="fade-left">
 
         <div class="workshop-card">
             <h3>☁️ AWS Cloud Computing</h3>
@@ -382,7 +412,7 @@
     </div>
 
 </section>
-<section id="presentations" class="presentations">
+<section id="presentations" class="presentations"data-aos="zoom-in">
 
     <h2>Paper Presentations</h2>
 
@@ -403,7 +433,7 @@
 </section>
 
 
-<section id="contact" class="contact">
+<section id="contact" class="contact"data-aos="zoom-in">
 
 <h2>Contact Me</h2>
 
@@ -432,6 +462,21 @@ Built with ❤️ using HTML, CSS & JavaScript
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<script src="script.js"></script>
+<!-- Back To Top Button -->
+
+<button id="topBtn" title="Go to top">
+    ↑
+</button>
 
 </body>
 </html>
