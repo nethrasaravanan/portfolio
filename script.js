@@ -108,6 +108,9 @@ topBtn.onclick = function(){
 
 const form = document.getElementById("contact-form");
 
+console.log("Form found:", form);
+console.log("EmailJS:", emailjs);
+
 form.addEventListener("submit", function (e) {
 
     e.preventDefault();
