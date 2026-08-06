@@ -37,6 +37,7 @@ function typeEffect() {
 }
 
 typeEffect();
+/*
 const themeBtn = document.getElementById("theme-toggle");
 
 themeBtn.onclick = function () {
@@ -50,6 +51,7 @@ themeBtn.onclick = function () {
     }
 
 }
+    */
 const counters = document.querySelectorAll(".counter");
 
 counters.forEach(counter => {

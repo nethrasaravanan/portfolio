@@ -461,7 +461,6 @@ Built with ❤️ using HTML, CSS & JavaScript
 </footer>
 
 
-    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
@@ -471,12 +470,23 @@ AOS.init({
 });
 </script>
 
-<script src="script.js"></script>
-<!-- Back To Top Button -->
 
+<!-- Back To Top Button -->
 <button id="topBtn" title="Go to top">
     ↑
 </button>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
@@ -485,6 +495,7 @@ emailjs.init({
 });
 </script>
 
+<!-- Your JS -->
 <script src="script.js"></script>
 
 </body>
